@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /tmp/wireshark-full.csv
+
+output.logstash:
+  hosts: ["localhost:5044"]
